@@ -7,7 +7,7 @@ const Navbar = () => {
         <header className="text-gray-600 ">
 
 
-            <nav className="md:ml-auto  md:mr-auto flex flex-wrap items-center justify-center text-xl mt-10 mb-10">
+            <nav className="md:ml-auto  md:mr-auto flex flex-wrap items-center justify-center text-xl mt-10 mb-2">
 
                 <Link to='home' className='ml-4 mr-9' >HOME</Link>
                 <Link to='review' className='mr-9'> REVIEWS</Link>
