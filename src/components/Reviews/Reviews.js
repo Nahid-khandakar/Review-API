@@ -9,7 +9,7 @@ const Reviews = () => {
     //console.log(reviews)
 
     return (
-        <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-8 p-14 bg-gray-200'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-8 p-14 bg-gray-200 '>
             {
                 reviews.map(review => <Card
                     key={review.id}
