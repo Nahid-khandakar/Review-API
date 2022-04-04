@@ -3,7 +3,7 @@ import './Home.css'
 import homeImage from './home-image.jpg'
 import useReviews from '../../Hook/useReviews';
 import Card from '../Card/Card';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
