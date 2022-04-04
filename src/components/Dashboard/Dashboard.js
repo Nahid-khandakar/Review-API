@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
 import './Dashboard.css'
 
 const Dashboard = () => {
@@ -52,51 +52,22 @@ const Dashboard = () => {
     ]
     return (
 
-        <div>
-            {/* Line Chart */}
-            <div className='p-10'>
-
-                <LineChart width={500} height={250} data={chartData}
-                    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-
-                    <CartesianGrid strokeDasharray="3 3" />
-
-                    <XAxis dataKey="month" />
-                    <YAxis />
-
-                    <Tooltip />
-                    <Legend />
-
-                    <Line type="monotone" dataKey="investment" stroke="	#008000" />
-                    <Line type="monotone" dataKey="revenue" stroke="#FF0000" />
-
-                </LineChart>
-            </div>
-
-            {/* bar chart */}
-
-            <div className='p-10'>
-                <BarChart width={500} height={250} data={chartData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="month" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-
-                    <Bar dataKey="sell" fill="#20B2AA" />
-                </BarChart>
-            </div>
+        <div className='bg-slate-200 grid lg:grid-cols-2 md:grid-cols-1 place-items-center'>
 
             {/* area chart */}
 
-            <div className='p-10'>
+            <div className='p-5 outline outline-offset-2 outline-2 outline-red-300 rounded-md mt-14 lg:mb-8 sm:mb-1 lg:w-96 md:w-60 lg:h-96 md:h-60'>
 
-                <AreaChart width={500} height={250} data={chartData}
+                <h1 className=" text-xl lg:text-2xl mb-4 font-medium text-red-500 ">
+                    Area Chart
+                </h1>
+
+                <AreaChart width={300} height={250} data={chartData}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
                         <linearGradient id="colorInvestment" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#008000" stopOpacity={0.8} />
-                            <stop offset="95%" stopColor="#008000" stopOpacity={0} />
+                            <stop offset="5%" stopColor="#009600" stopOpacity={0.8} />
+                            <stop offset="95%" stopColor="#009600" stopOpacity={0} />
                         </linearGradient>
                         <linearGradient id="colorStock" x1="0" y1="0" x2="0" y2="1">
                             <stop offset="5%" stopColor="#FF0000" stopOpacity={0.8} />
@@ -108,17 +79,60 @@ const Dashboard = () => {
                     <CartesianGrid strokeDasharray="3 3" />
                     <Tooltip />
                     <Legend />
-                    <Area type="monotone" dataKey="investment" stroke="#008000" fillOpacity={1} fill="url(#colorInvestment)" />
+                    <Area type="monotone" dataKey="investment" stroke="#009600" fillOpacity={1} fill="url(#colorInvestment)" />
                     <Area type="monotone" dataKey="stock" stroke="#FF0000" fillOpacity={1} fill="url(#colorStock)" />
 
                 </AreaChart>
             </div>
 
+            {/* Line Chart */}
+            <div className='p-5 outline outline-offset-2 outline-2 outline-red-300 rounded-md mt-14  mb-8 lg:w-96 md:w-60 lg:h-96 md:h-60'>
+                <h1 className=" text-xl lg:text-2xl mb-4 font-medium text-red-500 ">
+                    Line Chart
+                </h1>
+
+                <LineChart width={300} height={200} data={chartData}
+                    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+
+                    <CartesianGrid strokeDasharray="3 3" />
+
+                    <XAxis dataKey="month" />
+                    <YAxis />
+
+                    <Tooltip />
+                    <Legend />
+
+                    <Line type="monotone" dataKey="investment" stroke="	#009600" />
+                    <Line type="monotone" dataKey="revenue" stroke="#FF0000" />
+
+                </LineChart>
+            </div>
+
+            {/* bar chart */}
+
+            <div className='p-5 outline outline-offset-2 outline-2 outline-red-300 rounded-md mt-4 mb-8 lg:w-96 md:w-60 lg:h-96 md:h-60'>
+                <h1 className=" text-xl lg:text-2xl mb-4 font-medium text-red-500 ">
+                    Bar Chart
+                </h1>
+                <BarChart width={300} height={200} data={chartData}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="month" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+
+                    <Bar dataKey="sell" fill="#20B2AA" />
+                </BarChart>
+            </div>
+
 
             {/* pi chart */}
 
-            <div className='p-10'>
-                <PieChart width={400} height={400}>
+            <div className='p-5 outline outline-offset-2 outline-2 outline-red-300 rounded-md mt-4 mb-8  lg:w-96 md:w-60 lg:h-96 md:h-60'>
+                <h1 className=" text-xl lg:text-2xl mb-4 font-medium text-red-500 ">
+                    PI Chart
+                </h1>
+                <PieChart width={300} height={300}>
                     <Tooltip />
 
                     <Pie data={chartData2} dataKey="investment" cx="50%" cy="50%" outerRadius={70} fill="#8884d8" />
