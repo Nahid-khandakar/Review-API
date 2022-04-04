@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'
+import homeImage from './home-image.jpg'
 
 
 const Home = () => {
@@ -32,7 +33,7 @@ const Home = () => {
 
 
             <div className="lg:max-w-lg lg:w-4/12 md:w-1/2 w-5/6  ">
-                <img src='./home-image.jpg' className='rounded-lg drop-shadow-2xl' alt="" />
+                <img src={homeImage} className='rounded-lg drop-shadow-2xl' alt="" />
             </div>
 
         </div>
