@@ -1,0 +1,16 @@
+.link {
+    text-decoration: none;
+    color: #525252;
+    transition: color ease-in-out 300ms;
+}
+
+.link:hover {
+    color: #64748b;
+}
+
+.active-link {
+
+    border-bottom: 3px solid #ef4444;
+    transition: color ease-in-out 300ms;
+    color: #ef4444;
+}
