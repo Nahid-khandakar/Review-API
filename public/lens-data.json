@@ -4,21 +4,21 @@
         "name": "Alyssa Battams",
         "image": "https://robohash.org/quaeratquidemvoluptas.png?size=100x100&set=set1",
         "review": "Bought this camera almost new for next to nothing. Quality vintage product. The mirror and shutter are well dampened better than D700. Great autofocus. Accepts all Nikon lenses. Is not objectively better than newer cameras but feels subjectively better. Comes close to film dslr. You will love or hate it in 2022.",
-        "rating": 7
+        "rating": 5
     },
     {
         "id": 2,
         "name": "Sebastien O'Cridigan",
         "image": "https://robohash.org/velitexodio.png?size=100x100&set=set1",
         "review": "Very good case, I loved it but sold to move into the world of the mirrorless with Fujifilm",
-        "rating": 8
+        "rating": 2.5
     },
     {
         "id": 3,
         "name": "Candice Pound",
         "image": "https://robohash.org/enimplaceatqui.png?size=100x100&set=set1",
         "review": "I had replace my Canon 40D for this one. At the time, the only issue is the image above ISO800. Canon is better with the CMOS sensor. Otherwise i just love Nikon's image quality. The 3D Color Matrix Metering is outsanding and it put Canon in the box. Problems: Nothing",
-        "rating": 7
+        "rating": 3
     },
     {
         "id": 4,
@@ -32,14 +32,14 @@
         "name": "Goldina Gavahan",
         "image": "https://robohash.org/etabtempora.png?size=100x100&set=set1",
         "review": " This isn't a deal breaker, but Nikon offers several color profiles that you can upload to your camera. For example, I used to shoot with Velvia film on my F3 because I loved the color saturation. I can download the Velvia color profile and upload it to my camera under Shooting Menu>Manage Picture Control. The D3500 gives you seven onboard picture controls that you can manually adjust, but doesn't allow you upload additional color profiles",
-        "rating": 2
+        "rating": 3.5
     },
     {
         "id": 6,
         "name": "Kellina Wolfart",
         "image": "https://robohash.org/sitsapienteminima.png?size=100x100&set=set1",
         "review": "This camera does not have a microphone port. If you want to videotape your children playing and capture their conversation, you're stuck using the onboard mic. With the D5300, you can plug in a shotgun, lavalier, or professional mic with a boom arm (my setup).",
-        "rating": 7
+        "rating": 4
     },
     {
         "id": 7,
@@ -53,14 +53,14 @@
         "name": "Pauli Klambt",
         "image": "https://robohash.org/eumutqui.png?size=100x100&set=set1",
         "review": "I have bought my 28-300L some months ago and use it all around Galapagos Islands and Easter Island.. I think I'll will never find a better lens like this one. It is totally awesome, perfect match for my 7D.",
-        "rating": 9
+        "rating": 4.5
     },
     {
         "id": 9,
         "name": "Leroi Bengough",
         "image": "https://robohash.org/liberovoluptasconsequatur.png?size=100x100&set=set1",
         "review": "Superb lens.  I have had it a long time ... about 6 years + I think.  I originally got it for a 10D and then a 1DS II ... it is now used on a 5D III.",
-        "rating": 8
+        "rating": 1
     },
     {
         "id": 10,
@@ -95,13 +95,13 @@
         "name": "Dicky Wilcock",
         "image": "https://robohash.org/eaquaehic.png?size=100x100&set=set1",
         "review": "This lens is so amazing! Anyone can become a professional photographer with this lens! You just need to play around with it a bit to get used to it, and you’re all set! I highly recommend this lens to everyone especially beginners!",
-        "rating": 8
+        "rating": 2.5
     },
     {
         "id": 15,
         "name": "Vicki Clarey",
         "image": "https://robohash.org/autquosbeatae.png?size=100x100&set=set1",
         "review": "This has been a good lens to have around for the summer time candid shots.  Fast enough to capture detail and very light weight.",
-        "rating": 7
+        "rating": 5
     }
 ]

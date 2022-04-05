@@ -1,8 +1,11 @@
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import Rating from 'react-rating';
 
 const Card = (props) => {
     //console.log(props.review)
-    const { name, image, review } = props.review
+    const { name, image, review, rating } = props.review
     return (
 
         <div className="px-2 py-10 mx-auto bg-slate-200 drop-shadow-2xl rounded-2xl   ">
@@ -15,9 +18,14 @@ const Card = (props) => {
                 <div className=''>
                     <span className="inline-block h-1 w-24 rounded bg-red-500 mt-6 mb-4"></span>
                     <h2 className="text-gray-900 font-medium tracking-wider text-sm">{name}</h2>
-                    <p className="text-gray-500">Senior Product Designer</p>
-                </div>
 
+                </div>
+                <Rating
+                    initialRating={rating}
+                    emptySymbol={<FontAwesomeIcon icon={faStar} />}
+                    fullSymbol={<FontAwesomeIcon style={{ color: 'goldenrod' }} icon={faStar} />}
+                    readonly
+                ></Rating>
             </div>
 
         </div>
