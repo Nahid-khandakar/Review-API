@@ -10,10 +10,11 @@ const Blogs = () => {
 
                 <h1 className=" text-xl lg:text-2xl mb-4 font-medium text-red-500 ">What is CONTEXT API</h1>
                 <h3 className='text-xl'>
-                    The Context API can be used to share data with multiple components, without having to pass data through props manually.To start with the Context API, the first thing  is create a context using the createContext function from React. The createContext function accepts an initial value, but this initial value is not required.
+                    The Context API can be used to share data with multiple components, without having to pass data through props manually.To start with the Context API, the first thing  is create a context using the "createContext" function from React. The createContext function accepts an initial value, but this initial value is not required.
+                    <br />
 
-                    After creating your context, that context now has two React components that are going to be used: Provider and useContext hook.
-                    The Provider component is going to be used to wrap the components that are going to have access to our context. The useContext hook receives a prop called value, which can be accessed from all the components that are wrapped inside Provider, and it will be responsible to grant access to the context data .The useContext hook receives a single argument, which is the context that we want to access .
+                    After creating context, that context now has two React components that are going to be used "Provider"   and "useContext hook"  .
+                    The  Provider  component is going to be used to wrap the components that are going to have access to all context. The useContext hook receives a prop called value, which can be accessed from all the components that are wrapped inside Provider, and it will be responsible to grant access to the context data .The useContext hook receives a single argument, which is the context that we want to access .
                 </h3>
             </div>
 
@@ -30,7 +31,7 @@ const Blogs = () => {
                     <br />
 
                     <span className='text-2xl text-red-400 mr-5'>Block:</span>
-                    The element will start on a new line and occupy the full width available .Block element accept all the margins including left,right ,top and bottom margins .Examples: div, p, li, main, etc.
+                    The element will start on a new line and occupy the full width available .Block element accept all the margins including left,right ,top and bottom margins .Examples: "div, p, li, main" etc.
                     <br />
                     <br />
 
@@ -44,15 +45,22 @@ const Blogs = () => {
 
             <div className='outline outline-offset-2 outline-2 outline-red-300 p-8 rounded-md text-justify mt-10'>
                 <h1 className=" text-xl lg:text-2xl mb-4 font-medium text-red-500 ">What is HTML Semantic Elements</h1>
-                <h3 className='text-xl'>
-                    Semantic HTML tags allow  to add meaning in markup so that search engines, screen readers, and web browsers can make sense of it. By default, when a user agent reads your content it does not understand the context and meaning. Semantic HTML tags  serve  a structured content to users, which is especially important for on-page SEO and accessibility.
+                <div className='text-xl'>
+                    <h3>
+                        Semantic HTML tags allow  to add meaning in markup so that search engines, screen readers, and web browsers can make sense of it. By default, when a user agent reads your content it does not understand the context and meaning. Semantic HTML tags  serve  a structured content to users, which is especially important for on-page SEO and accessibility.
+                    </h3>
 
-                    'article' for self-contained blocks such as blog posts and articles,
-                    'aside' for sidebars,
-                    'nav' for navigation blocks,
-                    'section' for thematic content blocks.
-                </h3>
+                    <br />
+                    <ul className='list-disc'>
+                        <li>'article' for self-contained blocks such as blog posts and articles</li>
+                        <li>'aside' for sidebars</li>
+                        <li>'nav' for navigation blocks</li>
+                        <li>'section' for thematic content blocks</li>
+                    </ul>
+
+                </div>
             </div>
+
         </div>
 
 

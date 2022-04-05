@@ -4,6 +4,8 @@ import './Navbar.css'
 
 const Navbar = () => {
 
+
+
     return (
 
         <nav className="sm:ml-auto  sm:mr-auto flex flex-wrap items-center justify-center text-xl mt-8 mb-8">
