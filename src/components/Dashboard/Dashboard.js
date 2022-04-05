@@ -136,8 +136,12 @@ const Dashboard = () => {
 
                     <PolarRadiusAxis />
                     <Legend />
-                    <Pie data={chartData2} dataKey="investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-                    <Pie data={chartData} dataKey="stock" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                    <Tooltip />
+                    <Pie data={chartData2} dataKey="investment" nameKey="month" cx="50%" cy="50%" outerRadius={60} fill="#d97706" />
+
+                    <Pie data={chartData} dataKey="stock" nameKey="month" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#16a34a" label />
+
+
                 </PieChart>
             </div>
 

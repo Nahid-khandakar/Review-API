@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css'
-import homeImage from './home-image.jpg'
+import homeImage from '../../Images/home-image.jpg'
 import useReviews from '../../Hook/useReviews';
 import Card from '../Card/Card';
 import { useNavigate } from 'react-router-dom';
@@ -17,7 +17,7 @@ const Home = () => {
 
             {/* image and text div */}
 
-            <div className="sm:mx-auto flex px-20 py-14  flex-col justify-evenly   sm:flex-row items-center  ">
+            <div className="sm:mx-auto flex px-20 py-14  flex-col justify-evenly   sm:flex-row items-center ">
 
                 <div className=" md:w-1/2 lg:pr-24 md:pr-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
 
@@ -51,7 +51,7 @@ const Home = () => {
 
             {/* 3 review card div */}
 
-            <div className='text-center'>
+            <div className='text-center '>
                 <h1 className=" text-2xl lg:text-4xl font-medium text-red-500">
                     REVIEWS
 
@@ -68,7 +68,7 @@ const Home = () => {
                 }
             </div>
 
-            <div className="flex justify-center p-6">
+            <div className="flex justify-center pb-14">
 
 
                 <button

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Notfound.css'
-import error from './error.png'
+import error from '../../Images/error.png'
 import { Link } from 'react-router-dom';
 
 const Notfound = () => {

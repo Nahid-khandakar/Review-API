@@ -18,14 +18,14 @@ const Card = (props) => {
                 <div className=''>
                     <span className="inline-block h-1 w-24 rounded bg-red-500 mt-6 mb-4"></span>
                     <h2 className="text-gray-900 font-medium tracking-wider text-sm">{name}</h2>
-
+                    <Rating
+                        initialRating={rating}
+                        emptySymbol={<FontAwesomeIcon icon={faStar} />}
+                        fullSymbol={<FontAwesomeIcon style={{ color: 'goldenrod' }} icon={faStar} />}
+                        readonly
+                    ></Rating>
                 </div>
-                <Rating
-                    initialRating={rating}
-                    emptySymbol={<FontAwesomeIcon icon={faStar} />}
-                    fullSymbol={<FontAwesomeIcon style={{ color: 'goldenrod' }} icon={faStar} />}
-                    readonly
-                ></Rating>
+
             </div>
 
         </div>

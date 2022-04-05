@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav className="sm:ml-auto  sm:mr-auto flex flex-wrap items-center justify-center text-xl mt-8 mb-8">
 
 
-            <NavLink to='home' className={({ isActive }) => (isActive ? "active-link ml-8 mr-10" : "link ml-8 mr-10")}>
+            <NavLink to='home' className={({ isActive }) => (isActive ? "active-link ml-4 mr-10" : "link ml-4 mr-10")}>
                 HOME
             </NavLink>
 
