@@ -4,7 +4,7 @@
 - tailwind css freamwork
 - custom Hook
 - react rechart
-- font aw3some icon
+- font awesome icon
 - react rating
 - react router
 
