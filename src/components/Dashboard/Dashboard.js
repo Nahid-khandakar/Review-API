@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, PolarRadiusAxis, Tooltip, XAxis, YAxis } from 'recharts';
 import './Dashboard.css'
 
 const Dashboard = () => {
@@ -133,10 +133,11 @@ const Dashboard = () => {
                     PI Chart
                 </h1>
                 <PieChart width={300} height={300}>
-                    <Tooltip />
 
-                    <Pie data={chartData2} dataKey="investment" cx="50%" cy="50%" outerRadius={70} fill="#8884d8" />
-                    <Pie data={chartData} dataKey="stock" cx="50%" cy="50%" innerRadius={90} outerRadius={130} fill="#82ca9d" label />
+                    <PolarRadiusAxis />
+                    <Legend />
+                    <Pie data={chartData2} dataKey="investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
+                    <Pie data={chartData} dataKey="stock" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
                 </PieChart>
             </div>
 
