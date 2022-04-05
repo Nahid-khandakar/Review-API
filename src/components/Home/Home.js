@@ -8,14 +8,17 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
 
+    //custom hook
     const [reviews, setReviews] = useReviews()
+
+    //navigate for see more review button
     let navigate = useNavigate();
 
     return (
 
         <div className='bg-slate-200 '>
 
-            {/* image and text div */}
+            {/*home image and text div */}
 
             <div className="sm:mx-auto flex px-20 py-14  flex-col justify-evenly   sm:flex-row items-center ">
 
