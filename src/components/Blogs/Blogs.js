@@ -8,7 +8,7 @@ const Blogs = () => {
             {/* Question 1 */}
             <div className='outline outline-offset-2 outline-2 outline-red-300 p-8 rounded-md text-justify mt-4'>
 
-                <h1 className=" text-xl lg:text-2xl mb-4 font-medium text-red-500 ">What is CONTEXT API</h1>
+                <h1 className=" text-xl lg:text-2xl mb-4 font-medium text-red-500 ">What is CONTEXT API?</h1>
                 <h3 className='text-xl'>
                     The Context API can be used to share data with multiple components, without having to pass data through props manually.To start with the Context API, the first thing  is create a context using the "createContext" function from React. The createContext function accepts an initial value, but this initial value is not required.
                     <br />
